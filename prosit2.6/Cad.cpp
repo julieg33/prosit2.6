@@ -36,7 +36,6 @@ DataSet^ Cad::getRows(String^ requestsql, String^ dataTableName)
 	this->sql_command->CommandText = this->request_sql;
 	this->data_set = gcnew DataSet();
 	this->sql_data_adapter->Fill(this->data_set, dataTableName);
-	//erreur ici
 	return this->data_set;
 }
 
